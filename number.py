@@ -2,7 +2,7 @@ import os
 
 if __name__ == '__main__':
     count = 0
-    number = raw_input("Enter a name: ")
+    number = input("Enter a name: ")
     name  = number.lower()
     for i in range(0, len(name)):
         temp = name[i]
