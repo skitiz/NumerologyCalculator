@@ -35,7 +35,12 @@ if __name__ == '__main__':
         if count == 11 or count == 22:
             break
 
-    os.system('clear')
+    if platform.system() == 'Windows':
+        os.system('cls')
+    if platform.system() == 'Linux':
+        os.system('clear')
+    
+    
     print("Your name is : %s" % (number))
     print("Your true number is : %d" % (count))
     if count == 1:
